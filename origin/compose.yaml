@@ -1,3 +1,5 @@
+name: origin
+
 services:
   mongodb1:
     container_name: mongodb1
@@ -9,7 +11,6 @@ services:
     container_name: pymongo_api
     build: 
       context: api_app
-      dockerfile: Dockerfile
     image: kazhem/pymongo_api:1.0.0
     depends_on:
       - mongodb1
